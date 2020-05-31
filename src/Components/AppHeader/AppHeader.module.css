@@ -1,4 +1,4 @@
-@media only screen and (min-width: 360px) and (max-width: 600px){
+@media only screen and (min-width: 328px) and (max-width: 600px){
     .container{
         background-color: white !important;
         padding: 5% 5%;
@@ -29,6 +29,10 @@
     .user-icon i, .collapse-menu-button i{
         color: var(--theme-text-color);
         font-size: 120%;
+    }
+
+    .collapse-menu-button i{
+        transition: 0.5s;
     }
 
     .user-menu{

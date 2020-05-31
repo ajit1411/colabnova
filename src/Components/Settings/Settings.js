@@ -6,7 +6,7 @@ const Settings = (props) => {
             <h5>
                 ColabNova Settings
             </h5>
-            <button onClick={() => props.history.push({ pathname: '/home' })}>Home</button>
+            {/* <button onClick={() => props.history.push({ pathname: '/home' })}>Home</button> */}
         </div>
     )
 }

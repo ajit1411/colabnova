@@ -1,0 +1,16 @@
+@media only screen and (max-width: 600px) and (min-width: 328px){
+    .main-container{
+        margin: 2% 0 0 0;
+        padding: 2% 2%;
+    }
+
+    .info{
+        background-color: var(--theme-text-color);
+        color: white;
+        padding: 2%;
+        border-radius: 5px;
+        display: block;
+        text-align: justify;
+        width: 100% !important;
+    }
+}

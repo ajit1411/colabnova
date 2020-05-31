@@ -1,0 +1,30 @@
+@media only screen and (min-width: 328px) and (max-width: 600px){
+    .main-container{
+        /* border: 1px solid red; */
+        height: 100vh !important;
+        position: fixed;
+        width: 60% !important;
+        box-shadow: 2px 5px 5px;
+        padding-right: 5%;
+        transition: 0.5s left;
+        left: -100%;
+        top: 8.5%;
+        background-color: white;
+    }
+
+    .menu{
+        width: 100% !important;
+        text-align: left;
+        padding: 5% 5%;
+        /* background-color: white; */
+    }
+
+    .menu span{
+        display: block;
+        padding: 5% 0;
+        cursor: pointer;
+        font-weight: 600;
+        color: var(--theme-text-color);
+        border-bottom: 1px solid lightgrey;
+    }
+}

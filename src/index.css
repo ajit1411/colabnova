@@ -19,5 +19,5 @@ code {
 
 /* Custom CSS */
 :root{
-  --theme-text-color: #1b6ca8;
+  --theme-text-color: rgba(27, 108, 168, 0.9);
 }
