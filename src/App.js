@@ -13,20 +13,79 @@ const userData = {
       {
         'name': 'ColabNova',
         'description': 'Test project',
-        'owner': 'Ajit Jadhav',
-        'projectId': '30156871'
+        'owner': 'Akash',
+        'projectId': '30156871',
+        'tasks': [
+          {
+            'title': 'Project solutions',
+            'owner': 'Ajit Jadhav',
+            'date': '2020-01-06',
+            'isDue': true
+          },{
+            'title': 'Create Signup Page',
+            'owner': 'Ajit Jadhav',
+            'date': '2020-01-06',
+            'isDue': false
+          },
+          {
+            'title': 'Create Signup Page',
+            'owner': 'Ajit Jadhav',
+            'date': '2020-01-06',
+            'isDue': false
+          }
+        ]
       },
       {
         'name': 'ColabClub',
         'description': 'Test project',
         'owner': 'Akash Hiwale',
-        'projectId': '30156872'
+        'projectId': '30156872',
+        'tasks': [
+          {
+            'title': 'Create Login Page',
+            'owner': 'Ajit Jadhav',
+            'date': '2020-01-06',
+            'isDue': false
+          },
+          {
+            'title': 'Create Signup Page',
+            'owner': 'Ajit Jadhav',
+            'date': '2020-01-06',
+            'isDue': true
+          }
+        ]
       },
       {
         'name': 'Test Project',
         'description': '',
         'owner': 'Dhruv',
-        'projectId': '30156873'
+        'projectId': '30156873',
+        'tasks': [
+          {
+            'title': 'Create Signup Page',
+            'owner': 'Ajit Jadhav',
+            'date': '2020-01-06',
+            'isDue': false
+          },
+          {
+            'title': 'Create Signup Page',
+            'owner': 'Ajit Jadhav',
+            'date': '2020-01-06',
+            'isDue': true
+          },
+          {
+            'title': 'Create Signup Page',
+            'owner': 'Ajit Jadhav',
+            'date': '2020-01-06',
+            'isDue': false
+          },
+          {
+            'title': 'Create Signup Page',
+            'owner': 'Ajit Jadhav',
+            'date': '2020-01-06',
+            'isDue': true
+          }
+        ]
       }
     ]
   }

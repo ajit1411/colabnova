@@ -13,4 +13,41 @@
         text-align: justify;
         width: 100% !important;
     }
+
+    .task-header, .task-description{
+        color: var(--theme-text-color);
+        display: inline-flex;
+        width: 100%;
+    }
+
+    .task-header .title{
+        width: 80%;
+        text-align: left;
+    }
+
+    .task-header .status{
+        width: 20%;
+        text-align: right;
+    }
+
+    .task{
+        transition: 0.5s;
+        border-radius: 5px;
+    }
+
+    .task:hover{
+        box-shadow: 0px 2px 5px;
+    }
+
+    .task-description .owner, .task-description .date{
+        width: 50%;
+    }
+
+    .owner{
+        text-align: left;
+    }
+
+    .date{
+        text-align: right;
+    }
 }
