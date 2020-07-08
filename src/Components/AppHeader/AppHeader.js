@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import classes from './AppHeader.module.css'
+import { getProjectData, writeDataToConsole } from '../utility'
 const AppHeader = () => {
     const [userMenu, setuserMenu] = useState(false)
     const [sideMenu, setsideMenu] = useState(false)
+    const [projectName, setprojectName] = useState('')
     const toggleUserMenu = () => setuserMenu(!userMenu)
     const toggleSideNav = () => {
         if (sideMenu) {
@@ -29,15 +31,17 @@ const AppHeader = () => {
             </div>
         )
     }
-    const setProjectHeader = () => {
+    useEffect(() => {
         if (window.location.pathname.includes('/project')) {
-            if (window.location.pathname.split('/')[2].includes('%20')) {
-                return window.location.pathname.split('/')[2].replace('%20', ' ')
-            }
-            return window.location.pathname.split('/')[2]
+            getProjectData(window.location.pathname.split('/')[2])
+                .then(result => {
+                    setprojectName(result.data.projectData.name)
+                })
+                .catch(error => {
+                    return ''
+                })
         }
-        return 'Home'
-    }
+    }, [])
     return (
         <>
             <UserMenu />
@@ -47,9 +51,7 @@ const AppHeader = () => {
                 </div>
                 <div className={classes['header-title']}>
                     <b>
-                        {
-                            setProjectHeader()
-                        }
+                        {projectName}
                     </b>
                 </div>
                 <div className={classes['user-icon']}>
